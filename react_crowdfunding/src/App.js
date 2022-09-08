@@ -10,7 +10,7 @@ import TousLesProjets from './Components/TousLesProjets';
 import Footer from './Components/Footer';
 import logo_final from './logo_final.png'
 import logo_clair from './logo_clair.png';
-import AcceuilClt from './components/AcceuilClt';
+import AcceuilClt from './Components/AcceuilClt';
 
 function App() {
   return (
