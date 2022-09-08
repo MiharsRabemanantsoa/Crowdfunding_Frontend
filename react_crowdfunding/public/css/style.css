@@ -532,6 +532,7 @@ ul {
   padding: 10px 25px;
   font-weight: 600;
   text-decoration-line: none;
+
 }
 
 .side-nav a i {
@@ -671,7 +672,7 @@ ul {
   margin-left: auto;
   position: relative;
   z-index: 1;
-  
+
 }
 
 .banner-content span {
@@ -682,6 +683,12 @@ ul {
   border-radius: 15px;
   padding: 5px 15px;
   margin-bottom: 25px;
+}
+
+.banner-content h1 {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -690,7 +697,7 @@ ul {
   font-size: 55px;
   margin-bottom: 20px;
   text-align: left;
-  
+
 }
 
 .banner-content p {
@@ -698,14 +705,21 @@ ul {
   color: #fff;
   font-size: 18px;
   text-align: left;
+
 }
 
 .banner-content .banner-btn-area .banner-btn {
   margin-right: 15px;
   color: #302c51;
   background-color: #fff;
-    
+
 }
+
+.banner-content .banner-btn-area .banner-btn:hover {
+  color: #fff;
+  background-color: #302c51;
+}
+
 .common-btn{
   text-decoration: none;
   
@@ -747,9 +761,11 @@ ul {
   }
 }
 
+
 #banner-acceil{
   background-image: url(./image/agriculture.jpg);
 }
+
 
 /*-- Video Banner --*/
 .video-banner-area {
@@ -896,11 +912,14 @@ ul {
   margin-bottom: 10px;
   font-weight: 600;
   text-align: left;
+
 }
 
 .about-area .about-content p {
   margin-bottom: 10px;
+
   text-align: left;
+
 }
 
 .about-area .about-content .about-btn-area {
@@ -916,9 +935,11 @@ ul {
   background-color: #ff6015;
 }
 
+
 #boutonBlogArea{
   float: left;
 }
+
 /*-- Feature --*/
 .feature-area {
   background-image: url("../img/feature-bg.jpg");
@@ -1767,20 +1788,20 @@ ul {
 
 .footer-item {
   margin-bottom: 30px;
-  
+
 }
 
 .footer-item h3 {
   margin-bottom: 30px;
   color: #fff;
   font-size: 22px;
-  
+
 }
 
 .footer-item .footer-logo .logo {
   display: block;
   margin-bottom: 20px;
-  
+
 }
 
 .footer-item .footer-logo p {
@@ -1794,7 +1815,6 @@ ul {
   list-style-type: none;
   display: inline-block;
   margin-right: 10px;
-  
 }
 
 .footer-item .footer-logo ul li:last-child {
@@ -1814,13 +1834,13 @@ ul {
 
 .footer-item .footer-logo ul li a i {
   line-height: 30px;
-  
 }
 
 .footer-item .footer-logo ul li a:hover {
   color: #ff6015;
   background-color: #fff;
 }
+
 
 .logo{
   float: left;
@@ -1962,6 +1982,7 @@ ul {
 #contactFooter{
   float: left;
 }
+
 
 /*----- Home Demo Two CSS -----*/
 /*-- Banner --*/

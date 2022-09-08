@@ -18,9 +18,11 @@
 
 /* Colors */
 :root {
+
   --color-default: #302c51;
   --color-primary: #ff6015;
   --color-secondary: #757575;
+
 }
 
 /* Smooth scroll behavior */

@@ -1,5 +1,6 @@
 
 import './App.css';
+
 // import Navbar from './Components/Navbar';
 import Banner from './Components/Banner';
 import ProjetPopulaire from './Components/ProjetPopulaire';
@@ -8,13 +9,15 @@ import BlogArea from './Components/BlogArea'
 import TousLesProjets from './Components/TousLesProjets';
 import Footer from './Components/Footer';
 import logo_final from './logo_final.png'
-import logo_clair from './logo_clair.png'
+import logo_clair from './logo_clair.png';
+import AcceuilClt from './components/AcceuilClt';
 
 function App() {
   return (
     <div className="App">
       
       {/* <Navbar></Navbar> */}
+      
       <div className="loader">
                 <div className="d-table">
                     <div className="d-table-cell">
@@ -62,7 +65,7 @@ function App() {
             </div>
         </div>
     </div>
-    
+     <AcceuilClt/>
       <Banner></Banner>
       <ProjetPopulaire></ProjetPopulaire>
       <CounterArea></CounterArea>
@@ -76,6 +79,6 @@ function App() {
       </div>
     </div>
   );
-}
 
+}
 export default App;
