@@ -1,32 +1,4 @@
-/*
-@File: Finod Template Style
 
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-** - Default CSS
-** - Navbar CSS
-** - Home Demo One CSS
-** - Home Demo Two CSS
-** - Home Demo Three CSS
-** - About CSS
-** - Donation Details CSS
-** - Event Details CSS
-** - Blog Details CSS
-** - User CSS
-** - FAQ CSS
-** - Error CSS
-** - Coming Soon CSS
-** - Rules CSS
-** - Go Top CSS
-** - Preloader CSS
-*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 /*----- Default CSS -----*/
@@ -559,6 +531,8 @@ ul {
   border-radius: 30px;
   padding: 10px 25px;
   font-weight: 600;
+  text-decoration-line: none;
+
 }
 
 .side-nav a i {
@@ -698,6 +672,7 @@ ul {
   margin-left: auto;
   position: relative;
   z-index: 1;
+
 }
 
 .banner-content span {
@@ -714,18 +689,30 @@ ul {
   color: #fff;
   font-size: 55px;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+.banner-content h2 {
+  color: #fff;
+  font-size: 55px;
+  margin-bottom: 20px;
+  text-align: left;
+
 }
 
 .banner-content p {
   margin-bottom: 35px;
   color: #fff;
   font-size: 18px;
+  text-align: left;
+
 }
 
 .banner-content .banner-btn-area .banner-btn {
   margin-right: 15px;
   color: #302c51;
   background-color: #fff;
+
 }
 
 .banner-content .banner-btn-area .banner-btn:hover {
@@ -733,86 +720,19 @@ ul {
   background-color: #302c51;
 }
 
-.video-wrap {
-  z-index: 2;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+.common-btn{
+  text-decoration: none;
+  
 }
 
-.video-wrap .js-modal-btn {
-  z-index: 10;
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: relative;
-  font-size: 40px;
-  text-align: center;
-  color: #ff6015;
+#boutonBanner{
+  float: left;
 }
 
-.video-wrap .js-modal-btn i {
-  line-height: 100px;
-}
 
-.video-wrap .js-modal-btn:before {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-animation: pulse-border 1500ms ease-out infinite;
-          animation: pulse-border 1500ms ease-out infinite;
-}
-
-.video-wrap .js-modal-btn:after {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  display: block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 50%;
-  z-index: -1;
-  -webkit-transition: 0.5s all ease;
-  transition: 0.5s all ease;
-}
-
-.video-wrap .js-modal-btn:hover {
+.banner-content .banner-btn-area .banner-btn:hover {
   color: #fff;
-}
-
-.video-wrap .js-modal-btn:hover:before {
-  background-color: #ff6015;
-}
-
-.video-wrap .js-modal-btn:hover:after {
-  background-color: #ff6015;
-}
-
-.video-wrap span {
-  display: inline-block;
-  color: #ff6015;
-  font-weight: 600;
-  position: relative;
-  top: -20px;
-  margin-left: 25px;
+  background-color: #302c51;
 }
 
 @-webkit-keyframes pulse-border {
@@ -840,6 +760,12 @@ ul {
     opacity: 0;
   }
 }
+
+
+#banner-acceil{
+  background-image: url(./image/agriculture.jpg);
+}
+
 
 /*-- Video Banner --*/
 .video-banner-area {
@@ -985,10 +911,15 @@ ul {
   color: #302c51;
   margin-bottom: 10px;
   font-weight: 600;
+  text-align: left;
+
 }
 
 .about-area .about-content p {
   margin-bottom: 10px;
+
+  text-align: left;
+
 }
 
 .about-area .about-content .about-btn-area {
@@ -1002,6 +933,11 @@ ul {
 
 .about-area .about-content .about-btn-area .about-btn:hover {
   background-color: #ff6015;
+}
+
+
+#boutonBlogArea{
+  float: left;
 }
 
 /*-- Feature --*/
@@ -1852,22 +1788,27 @@ ul {
 
 .footer-item {
   margin-bottom: 30px;
+
 }
 
 .footer-item h3 {
   margin-bottom: 30px;
   color: #fff;
   font-size: 22px;
+
 }
 
 .footer-item .footer-logo .logo {
   display: block;
   margin-bottom: 20px;
+
 }
 
 .footer-item .footer-logo p {
   margin-bottom: 22px;
   color: #fff;
+  float: left;
+  text-align: justify;
 }
 
 .footer-item .footer-logo ul li {
@@ -1898,6 +1839,11 @@ ul {
 .footer-item .footer-logo ul li a:hover {
   color: #ff6015;
   background-color: #fff;
+}
+
+
+.logo{
+  float: left;
 }
 
 .footer-item .footer-causes .cause-inner {
@@ -1990,6 +1936,7 @@ ul {
   border-bottom: 1px solid #4f4b6b;
   padding-bottom: 20px;
   margin-bottom: 20px;
+  float: left;
 }
 
 .footer-item .footer-contact .contact-inner:last-child {
@@ -2027,6 +1974,15 @@ ul {
 .footer-item .footer-contact .contact-inner ul li a:hover {
   color: #ff6015;
 }
+
+#footerLinks{
+  text-align: left;
+}
+
+#contactFooter{
+  float: left;
+}
+
 
 /*----- Home Demo Two CSS -----*/
 /*-- Banner --*/
