@@ -1,32 +1,68 @@
 
 import './App.css';
 
-// import Navbar from './Components/Navbar';
-import Banner from './Components/Banner';
-import ProjetPopulaire from './Components/ProjetPopulaire';
-import CounterArea from './Components/CounterArea';
-import BlogArea from './Components/BlogArea'
-import TousLesProjets from './Components/TousLesProjets';
-import Footer from './Components/Footer';
+
+
 import logo_final from './logo_final.png'
 import logo_clair from './logo_clair.png';
-import AcceuilClt from './components/AcceuilClt';
+// import AcceuilClt from './Components/AcceuilClt';
+// import ListProjet from './Components/ListProjet';
+import {Route, BrowserRouter as Router, Routes, Link, } from 'react-router-dom';
+import ListProjet from './Components/ListProjet';
+import './App.css';
+import Acceuil from './Components/Acceuil';
+
 
 function App() {
+//     const navigate = useNavigate();
+
+// const navigateToListProjet = () => {
+//     navigate('/ListPRojet');
+// };
+
+// const navigateAcceuilClt = () => {
+//     navigate('/');
+// };
   return (
     <div className="App">
       
-      {/* <Navbar></Navbar> */}
-      
-      <div className="loader">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="pre-box-one">
-                            <div className="pre-box-two"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          {/* <Router>
+           <div className="App">
+           </div>
+       </Router>
+       <div className="App">
+    <ul>
+      <li>
+        <Link to="/ListProjet">Tous les projets</Link>
+      </li>
+    </ul>
+</div>  
+<Route exact path='/' element={< AcceuilClt />}></Route>
+<Route exact path='/ListProjet' element={< ListProjet />}></Route>
+<Routes>
+    <Route exact path='/' element={< AcceuilClt />}></Route>
+    <Route exact path='/ListProjet' element={< ListProjet />}></Route>
+</Routes> */}
+<Router>
+    {/* <div className="container"> */}
+    {/* <nav>
+        <ul>
+            <li>
+                <Link to="/">AcceuilClt</Link>
+                
+            </li>
+            <li>
+            <Link to="/listProjet">Tous les projets</Link>
+            </li>
+        </ul>
+    </nav> */}
+        
+        
+    
+{/* </div> */}
+
+
+
 
         <div className="navbar-area sticky-top">
 
@@ -39,46 +75,66 @@ function App() {
         <div className="main-nav">
             <div className="container">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <a className="navbar-brand" href="index.html">
+                    <Link className="navbar-brand" to="/">
                         <img src={logo_final} className="logo-one" alt="Logo"/>
-                    </a>
+                    </Link>
                     <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                    
+                    
+
                         <ul className="navbar-nav">
+                            
                             <li className="nav-item">
-                                <a href="index.html" className="nav-link active">Accueil</a>
+                                {/* <a href="index.html" className="nav-link active">Accueil</a> */}
+                                <Link to= "/home" className="nav-link active">Accueil</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="projets.html" className="nav-link">Tous les projets</a>
+                                {/* <a href="projets.html" className="nav-link">Tous les projets</a>  */}
+                                <Link to= "/listProjet" className="nav-link ">Tous les projets</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="a_propos.html" className="nav-link">A propos</a>
+                                {/* <a href="a_propos.html" className="nav-link">A propos</a> */}
+                                <Link to= "/a_propos" className="nav-link ">A propos</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="contact.html" className="nav-link">Contact</a>
+                                {/* <a href="contact.html" className="nav-link">Contact</a> */}
+                                <Link to= "/contact" className="nav-link ">Contact</Link>
                             </li>
                         </ul>
                         <div className="side-nav">
-                            <a className="connexion-btn" href="connexion.html">Se connecter</a>
-                        </div>
+                            {/* <a className="connexion-btn" href="connexion.html">Se connecter</a> */}
+                            <Link to= "/connexion-btn" className="nav-link ">Se connecter</Link>
+                        </div>                  
+                        
+                        
                     </div>
                 </nav>
             </div>
         </div>
     </div>
-     <AcceuilClt/>
+     {/* <AcceuilClt/>
       <Banner></Banner>
       <ProjetPopulaire></ProjetPopulaire>
       <CounterArea></CounterArea>
       <BlogArea></BlogArea>
       <TousLesProjets></TousLesProjets>
-      <Footer></Footer>
+      <ListProjet></ListProjet>
+      <Footer></Footer> */}
+      <Routes>
+                        <Route  path='/' element={<Acceuil/>}/>
+                        <Route  path='/listProjet' element={<ListProjet/>}/>
+                        </Routes>
+      </Router>
 
       <div className="go-top">
         <i className="bi bi-arrow-up-short"></i>
         <i className="bi bi-arrow-up-short"></i>
       </div>
+      
     </div>
+    
   );
 
 }
+
 export default App;

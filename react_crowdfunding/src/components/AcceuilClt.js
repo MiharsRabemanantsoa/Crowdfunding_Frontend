@@ -2,12 +2,13 @@ import React, { Component } from 'react'
 import logo_final from '../image/logo_final.png'
 import logo_clair from '../image/logo_clair.png'
 
+
 export default class AcceuilClt extends Component {
   render() {
     return (
       
       <div>
-        <div className="loader">
+        {/* <div className="loader">
           <div className="d-table">
               <div className="d-table-cell">
                   <div className="pre-box-one">
@@ -15,7 +16,8 @@ export default class AcceuilClt extends Component {
                   </div>
               </div>
           </div>
-        </div>
+        </div> */}
+        
 
     <div className="navbar-area sticky-top">
 
@@ -39,6 +41,7 @@ export default class AcceuilClt extends Component {
                         <li className="nav-item">
                             <a href="projet_utilisateur.html" className="nav-link">Tous les projets</a>
                         </li>
+                        
                         <li className="nav-item">
                             <a href="a_propos.html" className="nav-link">A propos</a>
                         </li>
