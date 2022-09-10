@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import {Link} from 'react-router-dom'
+
 import background from '../image/maki2.jpg';
 
 export default class ListProjet extends Component {
