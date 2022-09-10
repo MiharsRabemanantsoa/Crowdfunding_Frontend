@@ -21,7 +21,7 @@ public class Statut implements Serializable {
     @Column(nullable = false,length = 20)
     private String typeStatut;
 
-    @OneToMany(mappedBy = "statut")
-    private List<Projet> projetList;
+//    @OneToMany(mappedBy = "statut")
+//    private List<Projet> projetList;
 
 }
