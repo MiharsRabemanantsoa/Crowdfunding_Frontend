@@ -2,9 +2,25 @@
 import {Component} from 'react';
 import baobab from "../image/baobab4.jpg"
 import logo from "../image/logo_final.png"
+import UserService from "../UserService";
+
 
  class Register extends Component {
-  render() {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            users: {}
+        }
+    }
+    componentDidMount() {
+        UserService.getUsers(this.state.email).then(res => {
+            this.setState({users: res.data
+            });
+        })
+    }
+
+    render() {
     return (
         <div className="Connexion">
         <div className="loader">
@@ -31,21 +47,26 @@ import logo from "../image/logo_final.png"
                                 <div className="user-content-inner">
                                     <div className="top">
                                         <a href="index.html">
-                                             <img src= {logo} class="logo-one" alt="Logo"/>
+                                             <img src= {logo} className="logo-one" alt="Logo"/>
                                         </a>
                                         <h2>Connectez-vous</h2>
                                     </div>
-                                <form>
+                                <form method="GET">
                                     <div className="row">
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                        {/* <input type="text" value={email} onChange={handleChange} /> */}
-                                            <input type="email" className="form-control" placeholder="Email"/>
+                                            <input type="email"
+                                                   value={this.state.users.email}
+                                                   className="form-control"
+                                                   placeholder="Email"/>
                                         </div>
                                     </div>
                                     <div className="col-lg-12">
                                         <div className="form-group">
-                                            <input type="password" className="form-control" placeholder="Mot de passe"/>
+                                            <input type="password"
+                                                   value={this.state.users.motDePasse}
+                                                   className="form-control"
+                                                   placeholder="Mot de passe"/>
                                         </div>
                                     </div>
                                         <div className="col-lg-12">
@@ -54,7 +75,7 @@ import logo from "../image/logo_final.png"
                                     </div>
                                 </form>
                                     <div className="bottom">
-                                        <p>Vous n'avez pas de compte? <a href="inscription">S'inscrire</a></p>
+                                        <p>Vous n'avez pas de compte? <a href="Inscription.js">S'inscrire</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -64,6 +85,10 @@ import logo from "../image/logo_final.png"
             </div>
         </div>
         </div>
+            <div className="go-top">
+                <i className="bi bi-arrow-up-short"></i>
+                <i className="bi bi-arrow-up-short"></i>
+            </div>
         </div>
     );
   }

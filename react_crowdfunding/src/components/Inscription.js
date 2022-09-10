@@ -1,47 +1,67 @@
 
 import {Component} from 'react';
-import UserService from "../services/UserService";
-import baobab from '../image/baobab4.jpg'
-import logo_final from '../image/logo_final.png'
+import UserService from "../UserService";
+import swal from "sweetalert";
+import baobab from '../image/baobab4.jpg';
+import logo_final from '../image/logo_final.png';
+
 
 
 class Inscription extends Component{
     constructor(props) {
         super(props)
+
         this.state = {
-            nom: "",
-            prenom: "",
-            email: "",
-            motDePasse: "",
-            successful: false,
-        };
+            nom: '',
+            prenom: '',
+            email: '',
+            motDePasse: '',
+        }
+
         this.nomChange = this.nomChange.bind(this);
         this.prenomChange = this.prenomChange.bind(this);
         this.emailChange = this.emailChange.bind(this);
         this.motDePasseChange = this.motDePasseChange.bind(this);
-        this.handleRegister = this.handleRegister.bind(this);
+        this.saveUser = this.saveUser.bind(this)
     }
-    nomChange(e){
-        this.setState({nom: e.target.value})
+
+    nomChange = (event) => {
+        this.setState({nom: event.target.value})
     }
-    prenomChange(e){
-        this.setState({prenom: e.target.value})
+    prenomChange = (event) => {
+        this.setState({prenom: event.target.value})
     }
-    emailChange(e){
-        this.setState({email: e.target.value})
+    emailChange = (event) => {
+        this.setState({email: event.target.value})
     }
-    motDePasseChange(e){
-        this.setState({motDePasse: e.target.value})
+    motDePasseChange = (event) => {
+        this.setState({motDePasse: event.target.value})
     }
-    handleRegister(e){
+    saveUser = (e) => {
         e.preventDefault();
-        this.setState({
-            successful: false,
+        const user = {
+            nom: this.state.nom,
+            prenom: this.state.prenom,
+            email: this.state.email,
+            motDePasse: this.state.motDePasse
+        }
+        UserService.createUser(user)
+            .then(res => {
+            this.props.history.push('/users');
+            swal({
+                title: "Enregistré!",
+                icon: "success",
+                timer: 2000,
+                button: false
+            })
+            this.setState({redirect: this.state.redirect === false});
+        })
+            .catch(err => {
+                console.log(err)
         });
     }
 
-
-render() {
+    render() {
     return (
         <div className="Inscription">
             <div className="loader">
@@ -76,41 +96,52 @@ render() {
                                                 <div className="row">
                                                     <div className="col-lg-6">
                                                         <div className="form-group">
-                                                            <input value={this.state.nom}
+                                                            <input name="nom"
+                                                                   value={this.state.nom}
                                                                    onChange={this.nomChange}
-                                                                   type="text" className="form-control"
+                                                                   type="text"
+                                                                   className="form-control"
                                                                    placeholder="Nom"/>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
                                                         <div className="form-group">
-                                                            <input value={this.state.prenom}
+                                                            <input name="prenom"
+                                                                   value={this.state.prenom}
                                                                    onChange={this.prenomChange}
-                                                                   type="text" className="form-control"
+                                                                   type="text"
+                                                                   className="form-control"
                                                                    placeholder="Prénom"/>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
                                                         <div className="form-group">
-                                                            <input value={this.state.email} onChange={this.emailChange} type="email" className="form-control"
+                                                            <input name="email"
+                                                                   value={this.state.email}
+                                                                   onChange={this.emailChange}
+                                                                   type="email"
+                                                                   className="form-control"
                                                                    placeholder="Email"/>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
                                                         <div className="form-group">
-                                                            <input value={this.state.motDePasse} onChange={this.motDePasseChange} type="password" className="form-control"
+                                                            <input name="motDePasse"
+                                                                   value={this.state.motDePasse}
+                                                                   onChange={this.motDePasseChange}
+                                                                   type="password"
+                                                                   className="form-control"
                                                                    placeholder="Mot de passe"/>
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-12">
-                                                        <button type="submit"
-                                                                className="btn common-btn">S'inscrire
+                                                        <button type="submit" className="btn common-btn" onClick={this.saveUser}>S'inscrire
                                                         </button>
                                                     </div>
                                                 </div>
                                             </form>
                                             <div className="bottom">
-                                                <p>Vous avez déjà un compte? <a href="connexion">Se connecter</a></p>
+                                                <p>Vous avez déjà un compte? <a href="Connexion.js">Se connecter</a></p>
                                             </div>
                                         </div>
                                     </div>
