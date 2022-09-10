@@ -18,7 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Projet implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_projet", nullable = false)
     private Long idProjet;
 
@@ -36,6 +36,9 @@ public class Projet implements Serializable {
 
     @Column(nullable = false)
     private Double sommeObjectif;
+
+    @Column()
+    private Double sommeCollecte = 0.0;
 
     @Column(nullable = false)
     private Double tauxInteret;
@@ -62,11 +65,11 @@ public class Projet implements Serializable {
     @Column(columnDefinition = "DATE")
     private Calendar debutRemboursement;
 
-    @Column(nullable = false, columnDefinition = "TEXT")
+    @Column(nullable = true, columnDefinition = "TEXT")
     private String descriptionLongue;
 
     @Column(nullable = false)
-    private int etapeCreation;
+    private int etapeCreation=0;
 
     @ManyToOne
     private Statut statut;
