@@ -2,19 +2,16 @@
 import './App.css';
 
 // import Navbar from './Components/Navbar';
-import Banner from './Components/Banner';
-import ProjetPopulaire from './Components/ProjetPopulaire';
-import CounterArea from './Components/CounterArea';
-import BlogArea from './Components/BlogArea'
-import TousLesProjets from './Components/TousLesProjets';
-import Footer from './Components/Footer';
-import logo_final from './logo_final.png'
-import logo_clair from './logo_clair.png';
-import AcceuilClt from './Components/AcceuilClt';
+import logo_final from './logo_final.png';
+// import logo_clair from './logo_clair.png';
+import { BrowserRouter as Router,Route,Routes,Link } from 'react-router-dom';
+import Accueil from './Components/Accueil';
+import LesProjets from './Components/LesProjets';
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+    <div className="Container">
       
       {/* <Navbar></Navbar> */}
       
@@ -30,54 +27,53 @@ function App() {
 
         <div className="navbar-area sticky-top">
 
-        <div className="mobile-nav">
-            <a href="index.html" className="logo">
+        {/* <div className="mobile-nav">
+            <Link to="/home" className="logo">
                 <img src={logo_clair} alt="Logo"/>
-            </a>
-        </div>
+            </Link>
+        </div> */}
     
         <div className="main-nav">
             <div className="container">
                 <nav className="navbar navbar-expand-md navbar-light">
-                    <a className="navbar-brand" href="index.html">
+                    <Link className="navbar-brand" to="/home">
                         <img src={logo_final} className="logo-one" alt="Logo"/>
-                    </a>
+                    </Link>
                     <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a href="index.html" className="nav-link active">Accueil</a>
+                                <Link to="/home" className="nav-link active">Accueil</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="projets.html" className="nav-link">Tous les projets</a>
+                                <Link to="/projets" className="nav-link">Tous les projets</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="a_propos.html" className="nav-link">A propos</a>
+                                <Link to="/Apropos" className="nav-link">A propos</Link>
                             </li>
                             <li className="nav-item">
-                                <a href="contact.html" className="nav-link">Contact</a>
+                                <Link to="/contactUs" className="nav-link">Contact</Link>
                             </li>
                         </ul>
                         <div className="side-nav">
-                            <a className="connexion-btn" href="connexion.html">Se connecter</a>
+                            <Link className="nav-link" to="/connexion">Se connecter</Link>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
-     <AcceuilClt/>
-      <Banner></Banner>
-      <ProjetPopulaire></ProjetPopulaire>
-      <CounterArea></CounterArea>
-      <BlogArea></BlogArea>
-      <TousLesProjets></TousLesProjets>
-      <Footer></Footer>
+    <Routes>
+     <Route path='/home' element={<Accueil/>} />
+     <Route path='/allproject' element={<LesProjets/>}/>     
+     </Routes>
+     
 
       <div className="go-top">
         <i className="bi bi-arrow-up-short"></i>
         <i className="bi bi-arrow-up-short"></i>
       </div>
     </div>
+    </Router>
   );
 
 }
