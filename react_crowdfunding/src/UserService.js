@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const USERS_API_URL = "http://localhost:8089/api/login";
+const USERS_API_URL = "http://localhost:8089/api/users";
 
 class UserService {
     createUser(user){

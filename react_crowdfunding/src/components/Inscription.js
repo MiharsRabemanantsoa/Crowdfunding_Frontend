@@ -68,7 +68,7 @@ class Inscription extends Component{
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="pre-box-one">
-                            <div className="pre-box-two"></div>
+                            <div className="pre-box-two"/>
                         </div>
                     </div>
                 </div>
@@ -152,8 +152,8 @@ class Inscription extends Component{
                 </div>
             </div>
             <div className="go-top">
-                <i className="bi bi-arrow-up-short"></i>
-                <i className="bi bi-arrow-up-short"></i>
+                <i className="bi bi-arrow-up-short"/>
+                <i className="bi bi-arrow-up-short"/>
             </div>
         </div>
     );

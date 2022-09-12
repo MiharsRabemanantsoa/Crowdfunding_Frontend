@@ -86,8 +86,8 @@ import UserService from "../UserService";
         </div>
         </div>
             <div className="go-top">
-                <i className="bi bi-arrow-up-short"></i>
-                <i className="bi bi-arrow-up-short"></i>
+                <i className="bi bi-arrow-up-short"/>
+                <i className="bi bi-arrow-up-short"/>
             </div>
         </div>
     );
