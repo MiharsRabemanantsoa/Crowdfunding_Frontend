@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ConnectionDataProviderService">
+    <option name="dict">
+      <map>
+        <entry key="/Cloud/Cloud/host" value="ans.uscom-east-1.oraclecloud.com" />
+        <entry key="/Cloud/Cloud/idcs-url" value="" />
+        <entry key="/Cloud/ENTITLEMENT_ID" value="" />
+        <entry key="/Cloud/SDK_PATH" value="" />
+        <entry key="/Cloudsim/Cloudsim/service-url" value="http://localhost:8080" />
+        <entry key="/Cloudsim/SDK_PATH" value="" />
+        <entry key="/Cloudsim/TENANT_ID" value="mytenantId" />
+        <entry key="/profile_type" value="Cloudsim" />
+      </map>
+    </option>
+  </component>
+</project>
