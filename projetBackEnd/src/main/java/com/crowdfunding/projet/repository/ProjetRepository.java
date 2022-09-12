@@ -5,8 +5,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface ProjetRepository extends JpaRepository<Projet, Long> {
-    // obtenir la liste descendant des investissements par rapport au somme collecté
-    @Query(value = "SELECT * FROM ORDER BY", nativeQuery = true)
+    @Query(value = "SELECT * FROM projet ORDER BY somme_collecte DESC LIMIT 3;", nativeQuery = true)
+    List<Projet> listAll();
+
+
+
 }
