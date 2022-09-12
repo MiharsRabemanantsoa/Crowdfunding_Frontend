@@ -15,7 +15,7 @@ function App() {
       
       {/* <Navbar></Navbar> */}
       
-      <div className="loader">
+      {/* <div className="loader">
                 <div className="d-table">
                     <div className="d-table-cell">
                         <div className="pre-box-one">
@@ -23,7 +23,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            </div>
+        </div> */}
 
         <div className="navbar-area sticky-top">
 
