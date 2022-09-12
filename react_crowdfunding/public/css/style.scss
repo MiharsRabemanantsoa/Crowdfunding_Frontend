@@ -3346,7 +3346,11 @@ ul {
 /*----- User CSS -----*/
 .user-form-area {
     .user-img {
+<<<<<<< HEAD
         background-image: url('../banqueDonnes/baobab4.jpg');
+=======
+        background-image: url('../img/Images/baobab4.jpg');
+>>>>>>> master
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -3826,3 +3830,11 @@ ul {
     }
 }
 
+<<<<<<< HEAD
+=======
+/*Progress bar*/
+.barCompleted{
+    background-color: #ff6015;
+    width: fit-content;
+  }
+>>>>>>> master
