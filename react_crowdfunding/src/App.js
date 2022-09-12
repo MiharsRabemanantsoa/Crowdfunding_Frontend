@@ -1,7 +1,7 @@
 
 import './App.css';
 import React, {Component} from "react";
-import Inscription from "./components/Inscription";
+// import Inscription from "./components/Inscription";
 
 
 // import Navbar from './Components/Navbar';
@@ -10,6 +10,7 @@ import logo_final from './logo_final.png';
 import { BrowserRouter as Router,Route,Routes,Link } from 'react-router-dom';
 import Accueil from './Components/Accueil';
 import LesProjets from './Components/LesProjets';
+import Inscription from './Components/Inscription';
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
 
         <div className="navbar-area sticky-top">
 
@@ -36,40 +37,40 @@ function App() {
             </Link>
         </div> */}
     
-        <div className="main-nav">
-            <div className="container">
-                <nav className="navbar navbar-expand-md navbar-light">
-                    <Link className="navbar-brand" to="/home">
-                        <img src={logo_final} className="logo-one" alt="Logo"/>
-                    </Link>
-                    <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link to="/home" className="nav-link active">Accueil</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/projets" className="nav-link">Tous les projets</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/Apropos" className="nav-link">A propos</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/contactUs" className="nav-link">Contact</Link>
-                            </li>
-                        </ul>
-                        <div className="side-nav">
+            <div className="main-nav">
+                <div className="container">
+                    <nav className="navbar navbar-expand-md navbar-light">
+                        <Link className="navbar-brand" to="/home">
+                            <img src={logo_final} className="logo-one" alt="Logo"/>
+                        </Link>
+                        <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul className="navbar-nav">
+                                <li className="nav-item">
+                                    <Link to="/home" className="nav-link active">Accueil</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/projets" className="nav-link">Tous les projets</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/Apropos" className="nav-link">A propos</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/contactUs" className="nav-link">Contact</Link>
+                                </li>
+                            </ul>
+                            <div className="side-nav">
                             <Link className="nav-link" to="/singin">Se connecter</Link>
+                            </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
-    <Routes>
+        <Routes>
      <Route path='/' element={<Accueil/>} />
-     <Route path='/allproject' element={<LesProjets/>}/>   
+        <Route path='/allproject' element={<LesProjets/>}/>
      <Route path='/singin' element={<Inscription/>}  />
-     </Routes>
+        </Routes>
      
 
       <div className="go-top">
