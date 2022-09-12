@@ -1,5 +1,8 @@
 
 import './App.css';
+import React, {Component} from "react";
+import Inscription from "./components/Inscription";
+
 
 // import Navbar from './Components/Navbar';
 import logo_final from './logo_final.png';
@@ -55,7 +58,7 @@ function App() {
                             </li>
                         </ul>
                         <div className="side-nav">
-                            <Link className="nav-link" to="/connexion">Se connecter</Link>
+                            <Link className="nav-link" to="/singin">Se connecter</Link>
                         </div>
                     </div>
                 </nav>
@@ -63,8 +66,9 @@ function App() {
         </div>
     </div>
     <Routes>
-     <Route path='/home' element={<Accueil/>} />
-     <Route path='/allproject' element={<LesProjets/>}/>     
+     <Route path='/' element={<Accueil/>} />
+     <Route path='/allproject' element={<LesProjets/>}/>   
+     <Route path='/singin' element={<Inscription/>}  />
      </Routes>
      
 
