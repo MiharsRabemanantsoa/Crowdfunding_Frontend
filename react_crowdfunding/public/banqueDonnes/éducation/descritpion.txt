@@ -1,0 +1,23 @@
+Cartables à panneaux solaires: Une solution
+
+Saviez-vous que seulement 10 % de la population Burundaise ont un accès au courant électrique? 
+Les élèves sont parmi ceux qui sont le plus touchés par ces conditions car ils sont confrontés 
+à l'incapacité d'étudier et de faire leurs devoirs après le coucher du soleil. 
+Cela contribue fortement à l'augmentation des taux d'échecs et d'abandons scolaires. 
+En effet, selon le Ministère de l'Éducation, plus de 214.000 élèves ont quitté l'école au cours de l’année scolaire précédente.
+Dans l’optique de trouver une solution à ce problème, un groupe de jeunes 
+s'est donné pour mission d'offrir à tous les enfants Burundais encore sur le banc d'école 
+un meilleur accès à l'éducation afin de leur assurer un avenir radieux.
+Ils ont eu l'idée d'attacher un panneau solaire et une lampe sur un cartable, 
+qui procureront une source de lumière pendant les révisions du soir. 
+Le panneau solaire intégré au sac capte la lumière du soleil durant le trajet aller-retour de l'élève à l'école. 
+Â la tombée de la nuit, quand l’élève révise ses leçons apprises, 
+il pourra être capable d'allumer la lampe qui est alimentée par l'énergie du panneau solaire.
+Le cartable en question possède une batterie ayant une capacité de 1000mAh, 
+une lampe led ayant une puissance électrique de 1,5 Watts et une luminosité de 300 lumens. 
+Cette lampe est capable de pourvoir de la lumière pour une durée ininterrompue de 3 heures s’elle est bien chargée. 
+La production de ce sac nécessite 19 € et le prototype a été implémenté avec grand succès.
+Le début de ce projet se concentrera sur le premier groupe d'élèves dans la province de Rutana. 
+L'objectif est de distribuer au tout début 500 sacs, ce qui nécessitera une somme de 10.000 €.
+Ce projet nommé SOLUCADO, qui est un jeu de mots venant de « solution » et « cadeau » démarrera 
+grâce à votre soutien: financier, connexion et surtout gardez à l'esprit qu'aucune contribution n'est petite.
