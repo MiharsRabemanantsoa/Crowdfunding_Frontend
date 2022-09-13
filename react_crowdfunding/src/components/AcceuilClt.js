@@ -17,7 +17,6 @@ export default class AcceuilClt extends Component {
               </div>
           </div>
         </div> */}
-        
 
     <div className="navbar-area sticky-top">
 
