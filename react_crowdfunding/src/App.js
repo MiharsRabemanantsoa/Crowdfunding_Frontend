@@ -12,24 +12,26 @@ import Accueil from './Components/Accueil';
 import LesProjets from './Components/LesProjets';
 import Inscription from './Components/Inscription';
 
+
 function App() {
   return (
     <Router>
-    <div className="Container">
-      
-      {/* <Navbar></Navbar> */}
-      
-      <div className="loader">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="pre-box-one">
-                            <div className="pre-box-two"></div>
+        <div className="Container">
+        
+        {/* <Navbar></Navbar> */}
+        
+        {/* <div className="loader">
+                    <div className="d-table">
+                        <div className="d-table-cell">
+                            <div className="pre-box-one">
+                                <div className="pre-box-two"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
         </div>
 
-        <div className="navbar-area sticky-top">
+            <div className="navbar-area sticky-top">
 
         {/* <div className="mobile-nav">
             <Link to="/home" className="logo">
@@ -65,6 +67,7 @@ function App() {
                     </nav>
                 </div>
             </div>
+
         </div>
         <Routes>
      <Route path='/' element={<Accueil/>} />
@@ -73,11 +76,11 @@ function App() {
         </Routes>
      
 
-      <div className="go-top">
-        <i className="bi bi-arrow-up-short"></i>
-        <i className="bi bi-arrow-up-short"></i>
-      </div>
-    </div>
+        <div className="go-top">
+            <i className="bi bi-arrow-up-short"></i>
+            <i className="bi bi-arrow-up-short"></i>
+        </div>
+
     </Router>
   );
 
