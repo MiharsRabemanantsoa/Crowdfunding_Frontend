@@ -11,24 +11,25 @@ import { BrowserRouter as Router,Route,Routes,Link } from 'react-router-dom';
 import Accueil from './Components/Accueil';
 import LesProjets from './Components/LesProjets';
 
+
 function App() {
   return (
     <Router>
-    <div className="Container">
-      
-      {/* <Navbar></Navbar> */}
-      
-      <div className="loader">
-                <div className="d-table">
-                    <div className="d-table-cell">
-                        <div className="pre-box-one">
-                            <div className="pre-box-two"></div>
+        <div className="Container">
+        
+        {/* <Navbar></Navbar> */}
+        
+        {/* <div className="loader">
+                    <div className="d-table">
+                        <div className="d-table-cell">
+                            <div className="pre-box-one">
+                                <div className="pre-box-two"></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
+            </div> */}
 
-        <div className="navbar-area sticky-top">
+            <div className="navbar-area sticky-top">
 
         {/* <div className="mobile-nav">
             <Link to="/home" className="logo">
@@ -60,9 +61,11 @@ function App() {
                         <div className="side-nav">
                             <Link className="nav-link" to="/singin">Se connecter</Link>
                         </div>
+
                     </div>
-                </nav>
+                </div>
             </div>
+
         </div>
     </div>
     <Routes>
@@ -72,11 +75,11 @@ function App() {
      </Routes>
      
 
-      <div className="go-top">
-        <i className="bi bi-arrow-up-short"></i>
-        <i className="bi bi-arrow-up-short"></i>
-      </div>
-    </div>
+        <div className="go-top">
+            <i className="bi bi-arrow-up-short"></i>
+            <i className="bi bi-arrow-up-short"></i>
+        </div>
+        </div>
     </Router>
   );
 
