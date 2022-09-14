@@ -1,6 +1,12 @@
-import React, { Component } from 'react'
-import logo_final from '../image/logo_final.png'
-import logo_clair from '../image/logo_clair.png'
+import React, { Component } from 'react';
+import logo_final from '../image/logo_final.png';
+import logo_clair from '../image/logo_clair.png';
+import Banner from './Banner';
+import ProjetPopulaire from './ProjetPopulaire';
+import CounterArea from './CounterArea';
+import BlogArea from './BlogArea'
+import TousLesProjets from './TousLesProjets';
+import Footer from './Footer';
 
 export default class AcceuilClt extends Component {
   render() {
@@ -131,6 +137,12 @@ export default class AcceuilClt extends Component {
         </div>
     </div>
 </div>
+    <Banner></Banner>
+      <ProjetPopulaire></ProjetPopulaire>
+      <CounterArea></CounterArea>
+      <BlogArea></BlogArea>
+      <TousLesProjets></TousLesProjets>
+      <Footer></Footer>
         
       </div>
     )

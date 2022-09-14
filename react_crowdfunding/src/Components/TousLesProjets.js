@@ -25,49 +25,6 @@ const responsive = {
   };
 
 export default class TousLesProjets extends Component {
-    // const url = 'http://localhost:8088/home/lien'
-
-    // const [projets, setProjet] = useState({
-    //     loading : false,
-    //     data : null,
-    //     error : false
-    // })
-
-    // useEffect(()=>{
-    //     setProjet({
-    //         loading:true,
-    //         data:null,
-    //         error:false
-    //     })
-    //     axios.get(url).then(Response =>{
-    //         setProjet({
-    //             loading:false,
-    //             data:Response.data,
-    //             error:false
-    //         })
-    //     })
-    //     .catch(()=>setProjet({
-    //         loading:false,
-    //         data:null,
-    //         error:true
-    //     }))
-    // },[url])
-
-    // let content = null
-
-    // if(projets.error){
-    //     content=<p>there was an error please refresh or try again later</p>
-    // }
-
-    // if(projets.loading){
-    //     content=<p>loading</p>
-    // }
-
-    // if(projets.data){
-    //     content = projets.data.map((projet,key)=>
-    //     
-    //     )
-    // }
     
     constructor(props){
         super(props)
