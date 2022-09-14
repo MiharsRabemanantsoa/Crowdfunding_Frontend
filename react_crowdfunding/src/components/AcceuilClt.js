@@ -13,7 +13,7 @@ export default class AcceuilClt extends Component {
     return (
       
       <div>
-        <div className="loader">
+        {/* <div className="loader">
           <div className="d-table">
               <div className="d-table-cell">
                   <div className="pre-box-one">
@@ -21,7 +21,7 @@ export default class AcceuilClt extends Component {
                   </div>
               </div>
           </div>
-        </div>
+        </div> */}
 
     <div className="navbar-area sticky-top">
 

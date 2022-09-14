@@ -46,7 +46,7 @@ export default class TousLesProjets extends Component {
         <div className="feature-area pt-100 pb-70">
         <div className="container">
             <div className="row">
-        <section className="donations-area pt-100 pb-70">
+               <section className="donations-area pt-100 pb-70">
                     <div className="container">
                         <div className="section-title">
                             <h2 style={{fontWeight:700}}>Tous les projets</h2>
@@ -65,12 +65,12 @@ export default class TousLesProjets extends Component {
                             <a className="common-btn banner-btn" href="projets.html">Voir tous les projets</a>
                         </div>
                     </div>
-                </section>
+                  </section>
                 </div>
         </div>
-    </div>
+        </div>
 
     )
-}
+  }
 
 }

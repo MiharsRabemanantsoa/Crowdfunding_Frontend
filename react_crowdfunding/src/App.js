@@ -1,5 +1,8 @@
 
 import './App.css';
+import React, {Component} from "react";
+// import Inscription from "./components/Inscription";
+
 
 // import Navbar from './Components/Navbar';
 // import logo_clair from './logo_clair.png';
@@ -9,6 +12,7 @@ import LesProjets from './Components/LesProjets';
 import Login from './Components/login';
 import AcceuilClt from './Components/AcceuilClt';
 import Admin from './Components/Admin';
+
 
 function App() {
   return (
