@@ -9,15 +9,26 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.*;
+
+
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api")
 public class UserController {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
+    //inscription user
+    @PostMapping("/users")
+    public String save(@RequestBody Users user){
+        userService.saveUser(user);
+        return "Inscription réussi";
+    }
+    
+    //get all the users
     @GetMapping("/user")
     public List<Users> getUsers(){
         return userService.listUsers();
-    }
 }
