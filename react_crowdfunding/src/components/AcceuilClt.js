@@ -8,6 +8,7 @@ import BlogArea from './BlogArea'
 import TousLesProjets from './TousLesProjets';
 import Footer from './Footer';
 
+
 export default class AcceuilClt extends Component {
   render() {
     return (
@@ -45,6 +46,7 @@ export default class AcceuilClt extends Component {
                         <li className="nav-item">
                             <a href="projet_utilisateur.html" className="nav-link">Tous les projets</a>
                         </li>
+                        
                         <li className="nav-item">
                             <a href="a_propos.html" className="nav-link">A propos</a>
                         </li>

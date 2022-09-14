@@ -43,7 +43,7 @@ export default class Accueil extends Component {
                                     <Link to="/home" className="nav-link active">Accueil</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/allproject" className="nav-link">Tous les projets</Link>
+                                    <Link to="/listProjet" className="nav-link">Tous les projets</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/Apropos" className="nav-link">A propos</Link>
