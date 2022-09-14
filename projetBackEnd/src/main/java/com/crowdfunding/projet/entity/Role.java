@@ -14,13 +14,14 @@ import java.util.List;
 @NoArgsConstructor
 public class Role implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_role", nullable = false)
     private Long idRole;
 
-    @Column(length = 10)
-    private String type;
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20)
+    private ERole name;
 
-    @OneToMany(mappedBy = "role")
-    private List<Users> usersList;
+//    @OneToMany(mappedBy = "role")
+//    private List<Users> usersList;
 }
