@@ -1,11 +1,63 @@
 import React, { Component } from 'react'
 
 import background from '../image/maki2.jpg';
+import TousLesProjets from './TousLesProjets';
+import { Link } from 'react-router-dom';
+import logo_final from '../image/logo_final.png';
+import Footer from './Footer';
 
 export default class ListProjet extends Component {
   render() {
     return (
       <div>
+        <div className="loader">
+                <div className="d-table">
+                    <div className="d-table-cell">
+                        <div className="pre-box-one">
+                            <div className="pre-box-two"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div className="navbar-area sticky-top">
+
+            {/* <div className="mobile-nav">
+                <Link to="/home" className="logo">
+                    <img src={logo_clair} alt="Logo"/>
+                </Link>
+            </div> */}
+        
+            <div className="main-nav">
+                <div className="container">
+                    <nav className="navbar navbar-expand-md navbar-light">
+                        <Link className="navbar-brand" to="/home">
+                            <img src={logo_final} className="logo-one" alt="Logo"/>
+                        </Link>
+                        <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul className="navbar-nav">
+                                <li className="nav-item">
+                                    <Link to="/home" className="nav-link active">Accueil</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/allproject" className="nav-link">Tous les projets</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/Apropos" className="nav-link">A propos</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/contactUs" className="nav-link">Contact</Link>
+                                </li>
+                            </ul>
+                            <div className="side-nav">
+                                <Link className="nav-link" to="/signin">Se connecter</Link>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
         <div class="page-title-area title-bg-two"  style={{ backgroundImage: `url(${background})` }}>
         <div class="d-table">
             <div class="d-table-cell">
@@ -49,218 +101,8 @@ export default class ListProjet extends Component {
                 </fieldset>
             </form>
         </div>
-        <section class="donations-area p-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="img/Images/Monopente.jpg" alt="Donation"/>
-                            <a class="common-btn" href="investissements.html">Investir</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/">#Agriculture et Environnement</a>
-                                <h3>
-                                    <a href="investissements.html">Un hangar solaire dans le Tarn</a>
-                                </h3>
-                                <p>Soutenez la production d'énergies renouvelables grâce à des panneaux solaires chez un éleveur de brebis laitières.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Objectif: 1 000 000Ar</li>
-                                    <li>Collecté: 500 00Ar</li>
-                                </ul>
-                                <h4>Taux d'intérêt : <span>30%</span></h4><br/>
-                                <h4>Durée restante : <span>5 jours</span></h4><br/>
-                                <h4>Lieu : <span></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="img/Images/first.jpg" alt="Donation"/>
-                            <a class="common-btn" href="investissements.html">Investir</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/">#Elevage</a>
-                                <h3>
-                                    <a href="investissements.html">Un élevage porcin bio et familial</a>
-                                </h3>
-                                <p>Financez le développement d'une ferme familiale du Puy de Dôme, soucieuse du bien-être de son élevage.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Objectif: 1 000 000Ar</li>
-                                    <li>Collecté: 500 00Ar</li>
-                                </ul>
-                                <h4>Taux d'intérêt : <span>30%</span></h4><br/>
-                                <h4>Durée restante : <span>5 jours</span></h4><br/>
-                                <h4>Lieu : <span></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="img/Images/third3.png" alt="Donation"/>
-                            <a class="common-btn" href="investissements.html">Investir</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/">#Agriculture et Environnement</a>
-                                <h3>
-                                    <a href="investissements.html">Des fruits & légumes séchés, naturels, locaux & responsables</a>
-                                </h3>
-                                <p>Participez au développement de cette entreprise occitane qui valorise les fruits et légumes déclassés locaux.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Objectif: 1 000 000Ar</li>
-                                    <li>Collecté: 500 00Ar</li>
-                                </ul>
-                                <h4>Taux d'intérêt : <span>30%</span></h4><br/>
-                                <h4>Durée restante : <span>5 jours</span></h4><br/>
-                                <h4>Lieu : <span></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="img/Images/hannah-markley.jpg" alt="Donation"/>
-                            <a class="common-btn" href="investissements.html">Investir</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/">#Elevage</a>
-                                <h3>
-                                    <a href="investissements.html">Des travaux pour un élevage caprin</a>
-                                </h3>
-                                <p>Soutenez le développement de cet élevage caprin avec transformation fromagère en Occitanie.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Objectif: 1 000 000Ar</li>
-                                    <li>Collecté: 500 00Ar</li>
-                                </ul>
-                                <h4>Taux d'intérêt : <span>30%</span></h4><br/>
-                                <h4>Durée restante : <span>5 jours</span></h4><br/>
-                                <h4>Lieu : <span></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="img/Images/fourth.jpg" alt="Donation"/>
-                            <a class="common-btn" href="investissements.html">Investir</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/">#Agriculture et Environnement</a>
-                                <h3>
-                                    <a href="investissements.html">Production d'engrais naturel pour nos agriculteurs</a>
-                                </h3>
-                                <p>Soutenez le développement de cette compostière de l'Isère qui valorise les déchets verts collectifs en produisant un engrais naturel.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Objectif: 1 000 000Ar</li>
-                                    <li>Collecté: 500 00Ar</li>
-                                </ul>
-                                <h4>Taux d'intérêt : <span>30%</span></h4><br/>
-                                <h4>Durée restante : <span>5 jours</span></h4><br/>
-                                <h4>Lieu : <span></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <div class="donation-item">
-                        <div class="img">
-                            <img src="img/Images/pexels-jonas.jpg" alt="Donation"/>
-                            <a class="common-btn" href="investissements.html">Investir</a>
-                        </div>
-                        <div class="inner">
-                            <div class="top">
-                                <a class="tags" href="/">#Elevage</a>
-                                <h3>
-                                    <a href="investissements.html">Un élevage de brebis pour l'AOP Roquefort</a>
-                                </h3>
-                                <p>Aidez cet agriculteur à acheter des terres pour atteindre l'autonomie alimentaire pour ses brebis.</p>
-                            </div>
-                            <div class="bottom">
-                                <div class="skill">
-                                    <div class="skill-bar skill1 wow fadeInLeftBig">
-                                        <span class="skill-count1">85%</span>
-                                    </div>
-                                </div>
-                                <ul>
-                                    <li>Objectif: 1 000 000Ar</li>
-                                    <li>Collecté: 500 00Ar</li>
-                                </ul>
-                                <h4>Taux d'intérêt : <span>30%</span></h4><br/>
-                                <h4>Durée restante : <span>5 jours</span></h4><br/>
-                                <h4>Lieu : <span></span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pagination-area">
-                <ul>
-                    <li>
-                        <a href="/">Prev</a>
-                    </li>
-                    <li>
-                        <a class="active" href="/">1</a>
-                    </li>
-                    <li>
-                        <a href="/">2</a>
-                    </li>
-                    <li>
-                        <a href="/">3</a>
-                    </li>
-                    <li>
-                        <a href="/">Next</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
+        <TousLesProjets/>
+        <Footer/>
  </div>
 
     
