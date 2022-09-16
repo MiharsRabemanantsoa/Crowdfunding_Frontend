@@ -69,8 +69,8 @@ public class Users implements Serializable {
     @OneToOne
     private Role role;
 
-    @OneToMany(mappedBy = "users")
-    private List<Investissement> investissementList;
+//    @OneToMany(mappedBy = "users")
+//    private List<Investissement> investissementList;
 
     @OneToMany(mappedBy = "users")
     private List<ProjetSuivi> projetSuivis;

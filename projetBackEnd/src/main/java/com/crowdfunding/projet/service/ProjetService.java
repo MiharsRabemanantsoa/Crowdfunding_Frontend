@@ -16,4 +16,10 @@ public class ProjetService {
     public List<Projet> listAll(){
         return projetRepository.findAll();
     }
+
+    //find project by id
+    public Projet oneProject(Long id){return projetRepository.findProjectByIdProjet(id);}
+
+    //find project by id and show the number of participant
+    public Object projectWithParticipant(Long id){return projetRepository.findOneProject(id);}
 }
