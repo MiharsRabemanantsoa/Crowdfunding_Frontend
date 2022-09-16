@@ -73,7 +73,7 @@ public class Projet implements Serializable {
     private String descriptionLongue;
 
     @Column(nullable = false)
-    private int etapeCreation=0;
+    private int etape_Creation=0;
 
     @ManyToOne
     private Statut statut;
@@ -81,7 +81,7 @@ public class Projet implements Serializable {
     @ManyToOne
     private Categorie categProjet;
 
-    @OneToMany(mappedBy = "projetInvesti")
-    private List<Investissement> investissementList;
+//    @OneToMany(mappedBy = "projetInvesti")
+//    private List<Investissement> investissementList;
 
 }
