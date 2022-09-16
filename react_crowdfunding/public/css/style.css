@@ -81,9 +81,26 @@ ul {
   font-weight: 600;
 }
 
+.bouton-participer {
+  color: #fff;
+  background-color: #302c51;
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  
+}
+
 .common-btn:hover {
   color: #fff;
   background-color: #302c51;
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+.bouton-participer:hover{
+  color: #fff;
+  background-color: #ff6015;
   -webkit-transform: translate(0, -5px);
           transform: translate(0, -5px);
 }
@@ -1020,6 +1037,7 @@ ul {
   height: 630px;
 }
 
+
 .donation-item:hover {
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
@@ -1073,6 +1091,8 @@ ul {
   position: relative;
 }
 
+
+
 .donation-item .img img {
   width: 100%;
   border-radius: 30px 30px 0 30px;
@@ -1094,9 +1114,13 @@ ul {
 
 }
 
+
+
 .donation-item .inner {
   padding: 26px 30px 30px;
 }
+
+
 
 .donation-item .top .tags {
   display: inline-block;
@@ -1104,6 +1128,7 @@ ul {
   font-weight: 600;
   margin-bottom: 12px;
 }
+
 
 .donation-item .top .tags:hover {
   color: #302c51;
@@ -1114,9 +1139,13 @@ ul {
   font-size: 22px;
 }
 
+
+
 .donation-item .top h3 a {
   color: #302c51;
 }
+
+
 
 .donation-item .top h3 a:hover {
   color: #ff6015;
@@ -1128,16 +1157,22 @@ ul {
   transition: 0.5s all ease;
 }
 
+
+
 .donation-item .bottom {
   position: relative;
   padding-top: 25px;
   overflow: hidden;
 }
 
+
+
 .donation-item .bottom .skill {
   margin-bottom: 20px;
   position: relative;
 }
+
+
 
 .donation-item .bottom .skill:before {
   position: absolute;
@@ -1153,6 +1188,8 @@ ul {
   transition: 0.5s all ease;
 }
 
+
+
 .donation-item .bottom .skill-bar {
   width: 100%;
   height: 8px;
@@ -1161,6 +1198,8 @@ ul {
   position: relative;
   border-radius: 30px;
 }
+
+
 
 .donation-item .bottom .skill-bar span {
   position: absolute;
@@ -1174,6 +1213,8 @@ ul {
   -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
 }
+
+
 
 .donation-item .bottom .skill1 {
   width: 85%;
@@ -1232,6 +1273,8 @@ ul {
   margin-bottom: 18px;
 }
 
+
+
 .donation-item .bottom ul li {
   display: inline-block;
   -webkit-box-flex: 0;
@@ -1242,9 +1285,11 @@ ul {
   transition: 0.5s all ease;
 }
 
+
 .donation-item .bottom ul li:last-child {
   text-align: right;
 }
+
 
 .donation-item .bottom h4 {
   font-weight: 500;
@@ -1254,9 +1299,11 @@ ul {
   transition: 0.5s all ease;
 }
 
+
 .donation-item .bottom h4 span {
   color: #ff6015;
 }
+
 
 /*-- Work --*/
 .work-area {
@@ -4186,3 +4233,8 @@ ul {
   width: 80%;
   border-radius: 50px;
 }
+
+/* Image dans détails d'un projet */
+/* #head-details-projet{
+  background-image: url("./img/Images/baobab3.jpg");
+} */
