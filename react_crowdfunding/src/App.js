@@ -13,19 +13,25 @@ import Login from './Components/login';
 import AcceuilClt from './Components/AcceuilClt';
 import Admin from './Components/Admin';
 import ListProjet from './Components/ListProjet';
+import AboutProject from './Components/AboutProject';
+import Inscription from './Components/Inscription';
 
 
 function App() {
   return (
     <Router>
     <div className="Container">
+        
         <Routes>
         <Route path='/' element={<Accueil/>} />
         {/* <Route path='/allproject' element={<LesProjets/>}/> */}
         <Route path='/signin' element={<Login/>}     />
+        <Route path='/signup' element={<Inscription/>} />
         <Route path='/home' element={<AcceuilClt/>} />
-        <Route  path='/listProjet' element={<ListProjet/>}/>
+        <Route path='/listProjet' element={<ListProjet/>}/>
+        <Route path='/AboutProjectall/:idProjetPath' element={<AboutProject/>} />
         <Route path='/loop/admin' element={<Admin/>} />
+
         </Routes>
 
         <div className="go-top">
@@ -36,6 +42,4 @@ function App() {
     </Router>
   );
 }
-
-  
-  export default App;
+export default App;

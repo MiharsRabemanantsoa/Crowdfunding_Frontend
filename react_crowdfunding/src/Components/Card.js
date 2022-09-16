@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import ProgressBar from "@ramonak/react-progress-bar";
 
 
@@ -17,17 +17,18 @@ export default function Card (props) {
 
 
     return (
+        
         <div className="col-sm-6 col-lg-4">
         <div className="donation-item">
             <div className="img">
                 <img src={props.projet.image} alt={props.projet.titre}/>
-                <Link className="common-btn" to="/détailsProjet">Investir</Link>
+                <Link className="common-btn" to={`/AboutProjectall/${props.projet.idProjet}`}>Investir</Link>
             </div>
             <div className="inner">
                 <div className="top">
-                    <Link className="tags" to="/détailsProjet">#{props.projet.categProjet.nomCateg}</Link>
+                    <Link className="tags" to={`/Aboutsrojet.idProjet}`}>#{props.projet.categProjet.nomCateg}</Link>
                         <h3>
-                            <Link to="/détailsProjet">{props.projet.titre}</Link>
+                            <Link to={`/AboutProjectall/${props.projet.idProjet}`}>{props.projet.titre}</Link>
                         </h3>
                     <p>{props.projet.descriptionCourte}</p>
                 </div>
@@ -48,7 +49,9 @@ export default function Card (props) {
                 </div>
             </div>
         </div>
+    
     </div>
     
     )
 }
+// Card.contextType = idContext;
