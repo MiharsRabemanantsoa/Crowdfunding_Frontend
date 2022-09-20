@@ -25,8 +25,8 @@ public class ModePaiement implements Serializable {
     @Column
     private String nomProprietaireCarte;
 
-    @Column
-    private int numeroCarte;
+    @Column(length = 25)
+    private double numeroCarte;
 
     @Temporal(TemporalType.DATE)
     @Column(columnDefinition = "DATE")
