@@ -1,3 +1,5 @@
+
+import Notification from '../Components/Notification'
 import React, { Component } from 'react';
 import logo_final from '../image/logo_final.png';
 import logo_clair from '../image/logo_clair.png';
@@ -40,6 +42,7 @@ export default class AcceuilClt extends Component {
                 </a>
                 <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                     <ul className="navbar-nav">
+                        
                         <li className="nav-item">
                             <a href="utilisateur.html" className="nav-link active">Accueil</a>
                         </li>
@@ -56,64 +59,9 @@ export default class AcceuilClt extends Component {
                     </ul>
                     <div className="utilisateur">
                         <ul className="navbar-nav">
-                            <li className="nav-item dropdown">
-                                <a className="nav-link nav-icon" href="creerprojet.html" data-bs-toggle="dropdown">
-                                    <i className="bi bi-bell"></i>
-                                    <span className="badge bg-primary badge-number"></span>
-                                </a>
-                                <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-                                    <li className="dropdown-header">
-                                        You have 4 new notifications
-                                        <a href="creerprojet.html"><span className="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider"/>
-                                    </li>
-                                    <li className="nav-item">
-                                        <i className="bi bi-exclamation-circle text-warning"></i>
-                                        <div>
-                                            <a href='creerprojet.html'>Lorem Ipsum</a>
-                                            
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider"/>
-                                    </li>
-                                    <li className="nav-item">
-                                        <i className="bi bi-x-circle text-danger"></i>
-                                        <div>
-                                            <a href='creerprojet.html'>Atque rerum nesciunt</a>
-                                            
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider"/>
-                                    </li>
+                            <li className="nav-item dropdown"  >
 
-                                    <li className="nav-item">
-                                        <i className="bi bi-check-circle text-success"></i>
-                                        <div>
-                                            <a href='creerprojet.html'>Sit rerum fuga</a>
-                                     
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider"/>
-                                    </li>
-                                    <li className="nav-item">
-                                        <i className="bi bi-info-circle text-primary"></i>
-                                        <div>
-                                            <a href='creerprojet.html'>Dicta reprehenderit</a>
-                                            
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <hr className="dropdown-divider"/>
-                                    </li>
-                                    <li className="dropdown-footer">
-                                        <a href="creerprojet.html">Show all notifications</a>
-                                    </li>
-                                </ul>
+                                <Notification />                               
                             </li>
                             <li className="nav-item">
                                 <a href="utilisateur.html" className="nav-link dropdown-toggle active">K. Anderson <i className="bi bi-chevron-down dropdown-indicator"></i></a>

@@ -8,6 +8,7 @@ import React, {Component} from "react";
 // import logo_clair from './logo_clair.png';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Accueil from './Components/Accueil';
+import LesProjets from './Components/LesProjets';
 // import LesProjets from './Components/LesProjets';
 import Login from './Components/login';
 import AcceuilClt from './Components/AcceuilClt';
@@ -17,12 +18,15 @@ import AboutProject from './Components/AboutProject';
 import Inscription from './Components/Inscription';
 
 
+
 function App() {
   return (
     <Router>
     <div className="Container">
         
-        <Routes>
+        <Routes> 
+            <Route path='/allproject' element={<LesProjets />}/>
+            {/* <Route  path='/andrana' element={<Andrana />}/>     */}
         <Route path='/' element={<Accueil/>} />
         {/* <Route path='/allproject' element={<LesProjets/>}/> */}
         <Route path='/signin' element={<Login/>}     />
