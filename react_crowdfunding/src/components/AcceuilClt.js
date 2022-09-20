@@ -1,7 +1,15 @@
-import React, { Component } from 'react'
-import logo_final from '../image/logo_final.png'
-import logo_clair from '../image/logo_clair.png'
+
 import Notification from '../Components/Notification'
+import React, { Component } from 'react';
+import logo_final from '../image/logo_final.png';
+import logo_clair from '../image/logo_clair.png';
+import Banner from './Banner';
+import ProjetPopulaire from './ProjetPopulaire';
+import CounterArea from './CounterArea';
+import BlogArea from './BlogArea'
+import TousLesProjets from './TousLesProjets';
+import Footer from './Footer';
+
 
 export default class AcceuilClt extends Component {
   render() {
@@ -41,6 +49,7 @@ export default class AcceuilClt extends Component {
                         <li className="nav-item">
                             <a href="projet_utilisateur.html" className="nav-link">Tous les projets</a>
                         </li>
+                        
                         <li className="nav-item">
                             <a href="a_propos.html" className="nav-link">A propos</a>
                         </li>
@@ -78,6 +87,12 @@ export default class AcceuilClt extends Component {
         </div>
     </div>
 </div>
+    <Banner></Banner>
+      <ProjetPopulaire></ProjetPopulaire>
+      <CounterArea></CounterArea>
+      <BlogArea></BlogArea>
+      <TousLesProjets></TousLesProjets>
+      <Footer></Footer>
         
       </div>
     )

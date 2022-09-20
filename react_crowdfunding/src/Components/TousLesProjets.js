@@ -54,7 +54,7 @@ export default class TousLesProjets extends Component {
                         </div>
                         <div className="row" >
                            <Carousel axis='horizontal'selectedItem='3'  responsive={responsive}>
-                        { this.state.projets.map((projet,index)=>
+                        { this.state.projets.map((projet)=>
                             
                             <Card projet={projet} key={projet.idProjet}></Card> 
                              ) 

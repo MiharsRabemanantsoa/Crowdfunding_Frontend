@@ -1,85 +1,49 @@
 
 import './App.css';
+import React, {Component} from "react";
+// import Inscription from "./components/Inscription";
+
 
 // import Navbar from './Components/Navbar';
-import logo_final from './logo_final.png';
 // import logo_clair from './logo_clair.png';
-import { BrowserRouter as Router,Route,Routes,Link } from 'react-router-dom';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Accueil from './Components/Accueil';
 import LesProjets from './Components/LesProjets';
-import Essai from './Components/Notification';
-// import Andrana from './Components/andrana';
+// import LesProjets from './Components/LesProjets';
+import Login from './Components/login';
+import AcceuilClt from './Components/AcceuilClt';
+import Admin from './Components/Admin';
+import ListProjet from './Components/ListProjet';
+import AboutProject from './Components/AboutProject';
+import Inscription from './Components/Inscription';
+
 
 
 function App() {
   return (
     <Router>
-        <div className="Container">
+    <div className="Container">
         
-        {/* <Navbar></Navbar> */}
-        
-        {/* <div className="loader">
-                    <div className="d-table">
-                        <div className="d-table-cell">
-                            <div className="pre-box-one">
-                                <div className="pre-box-two"></div>
-                            </div>
-                        </div>
-                    </div>
-            </div> */}
-
-            <div className="navbar-area sticky-top">
-
-            {/* <div className="mobile-nav">
-                <Link to="/home" className="logo">
-                    <img src={logo_clair} alt="Logo"/>
-                </Link>
-            </div> */}
-        
-                <div className="main-nav">
-                    <div className="container">
-                        <nav className="navbar navbar-expand-md navbar-light">
-                            <Link className="navbar-brand" to="/home">
-                                <img src={logo_final} className="logo-one" alt="Logo"/>
-                            </Link>
-                            <div className="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <Link to="/home" className="nav-link active">Accueil</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/projets" className="nav-link">Tous les projets</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/Apropos" className="nav-link">A propos</Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link to="/contactUs" className="nav-link">Contact</Link>
-                                    </li>
-                                </ul>
-                                <div className="side-nav">
-                                    <Link className="nav-link" to="/connexion">Se connecter</Link>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        <Routes>
-            <Route path='/home' element={<Accueil/>} />   
+        <Routes> 
             <Route path='/allproject' element={<LesProjets />}/>
-            <Route exact path='/notif' element={<Essai />}/> 
             {/* <Route  path='/andrana' element={<Andrana />}/>     */}
+        <Route path='/' element={<Accueil/>} />
+        {/* <Route path='/allproject' element={<LesProjets/>}/> */}
+        <Route path='/signin' element={<Login/>}     />
+        <Route path='/signup' element={<Inscription/>} />
+        <Route path='/home' element={<AcceuilClt/>} />
+        <Route path='/listProjet' element={<ListProjet/>}/>
+        <Route path='/AboutProjectall/:idProjetPath' element={<AboutProject/>} />
+        <Route path='/loop/admin' element={<Admin/>} />
+
         </Routes>
-        
 
         <div className="go-top">
             <i className="bi bi-arrow-up-short"></i>
             <i className="bi bi-arrow-up-short"></i>
         </div>
-        </div>
+    </div>
     </Router>
   );
-
 }
 export default App;
