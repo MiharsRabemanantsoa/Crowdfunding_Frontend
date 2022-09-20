@@ -8,9 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.nio.file.Paths;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Data
@@ -18,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Users implements Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_user", nullable = false)
     private Long idUser;
 
@@ -63,11 +61,16 @@ public class Users implements Serializable {
     @Column
     private boolean isLogedIn = false;
 
-    @ManyToOne
+//    @ManyToMany(fetch = FetchType.LAZY)
+//    @JoinTable(	name = "user_roles",
+//            joinColumns = @JoinColumn(name = "id_user"),
+//            inverseJoinColumns = @JoinColumn(name = "id_role"))
+//    private Set<Role> roles = new HashSet<>();
+    @OneToOne
     private Role role;
 
-    @OneToMany(mappedBy = "users")
-    private List<Investissement> investissementList;
+//    @OneToMany(mappedBy = "users")
+//    private List<Investissement> investissementList;
 
     @OneToMany(mappedBy = "users")
     private List<ProjetSuivi> projetSuivis;

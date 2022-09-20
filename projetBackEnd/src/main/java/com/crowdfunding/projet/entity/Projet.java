@@ -48,6 +48,10 @@ public class Projet implements Serializable {
     private Calendar lancementSouhaite;
 
     @Temporal(TemporalType.DATE)
+    @Column(nullable = true,columnDefinition = "DATE")
+    private Calendar dateMiseEnLigne;
+
+    @Temporal(TemporalType.DATE)
     @Column(nullable = false,columnDefinition = "DATE")
     private Calendar finCampagne;
 
@@ -69,7 +73,7 @@ public class Projet implements Serializable {
     private String descriptionLongue;
 
     @Column(nullable = false)
-    private int etapeCreation=0;
+    private int etape_Creation=0;
 
     @ManyToOne
     private Statut statut;
