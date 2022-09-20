@@ -431,7 +431,11 @@ ul {
   -webkit-transition: .3s;
   transition: .3s;
   border-radius: 0;
+  width: 350px;
 }
+
+
+
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li {
   border-bottom: 1px solid #ddd3;

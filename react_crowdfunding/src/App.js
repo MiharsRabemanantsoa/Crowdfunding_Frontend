@@ -7,6 +7,8 @@ import logo_final from './logo_final.png';
 import { BrowserRouter as Router,Route,Routes,Link } from 'react-router-dom';
 import Accueil from './Components/Accueil';
 import LesProjets from './Components/LesProjets';
+import Essai from './Components/Notification';
+// import Andrana from './Components/andrana';
 
 
 function App() {
@@ -64,8 +66,10 @@ function App() {
                 </div>
             </div>
         <Routes>
-        <Route path='/home' element={<Accueil/>} />   
-        <Route path='/allproject' element={<LesProjets/>}/>     
+            <Route path='/home' element={<Accueil/>} />   
+            <Route path='/allproject' element={<LesProjets />}/>
+            <Route exact path='/notif' element={<Essai />}/> 
+            {/* <Route  path='/andrana' element={<Andrana />}/>     */}
         </Routes>
         
 
