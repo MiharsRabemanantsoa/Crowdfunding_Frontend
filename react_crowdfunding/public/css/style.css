@@ -79,6 +79,7 @@ ul {
   padding: 12px 25px;
   border-radius: 30px;
   font-weight: 600;
+  border-color: none;
 }
 
 .bouton-participer {

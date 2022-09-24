@@ -1,0 +1,237 @@
+.features .nav-link.active {
+    color: var(--color-primary);
+    background-color: transparent;
+    border-color: var(--color-primary);
+  }
+
+  .features .nav-link {
+    border: 0;
+    border-bottom: 4px solid #e2e4e6;
+  }
+
+  donation-item-invest {
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 20px 0px #dddddd8c;
+            box-shadow: 0px 0px 20px 0px #dddddd8c;
+    border-radius: 30px 30px 0 30px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+
+  }
+
+  .donation-item-invest:hover .img img {
+    border-radius: 0;
+  }
+
+  .donation-item-invest:hover .img .common-btn {
+    opacity: 1;
+    visibility: visible;
+    bottom: 15px;
+  }
+  .donation-item-invest .img {
+    position: relative;
+  }
+  
+  
+  
+  .donation-item-invest .img img {
+    width: 100%;
+    border-radius: 30px 30px 0 30px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  .donation-item-invest .img .common-btn {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    max-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    visibility: hidden;
+  
+  }
+  
+  
+  .donation-item-invest .inner {
+    padding: 26px 30px 30px;
+  }
+  
+  
+  
+  .donation-item-invest .top .tags {
+    display: inline-block;
+    color: #ff6015;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  
+  .donation-item-invest .top h3 {
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  
+  
+  
+  .donation-item-invest.top h3 a {
+    color: #302c51;
+  }
+
+  .donation-item-invest .top p {
+    margin-bottom: 0;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  
+  
+  .donation-item-invest .bottom {
+    position: relative;
+    padding-top: 25px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .donation-item-invest .bottom .skill {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  
+  
+  .donation-item-invest .bottom .skill:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    display: block;
+    background: #ebeded;
+    border-radius: 30px;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  .donation-item-invest .bottom .skill-bar {
+    width: 100%;
+    height: 8px;
+    background: #ff6015;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+  }
+  
+  
+  
+  .donation-item-invest .bottom .skill-bar span {
+    position: absolute;
+    top: -26px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #302c51;
+    margin-bottom: 0;
+    display: inline-block;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  
+  
+  .donation-item-invest .bottom .skill1 {
+    width: 85%;
+  }
+  
+  .donation-item-invest .bottom .skill1 .skill-count1 {
+    right: 7px;
+  }
+  
+  .donation-item-invest .bottom .skill2 {
+    width: 95%;
+  }
+  
+  .donation-item-invest .bottom .skill2 .skill-count2 {
+    right: 7px;
+  }
+  
+  .donation-item-invest .bottom .skill3 {
+    width: 90%;
+  }
+  
+  .donation-item-invest .bottom .skill3 .skill-count3 {
+    right: 7px;
+  }
+  
+  .donation-item-invest .bottom .skill4 {
+    width: 80%;
+  }
+  
+  .donation-item-invest .bottom .skill4 .skill-count4 {
+    right: 7px;
+  }
+  
+  .donation-item-invest .bottom .skill5 {
+    width: 75%;
+  }
+  
+  .donation-item-invest .bottom .skill5 .skill-count5 {
+    right: 7px;
+  }
+  
+  .donation-item-invest .bottom .skill6 {
+    width: 70%;
+  }
+  
+  .donation-item-invest.bottom .skill6 .skill-count6 {
+    right: 7px;
+  }
+  
+  .donation-item-invest .bottom ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  
+  
+  
+  .donation-item-invest .bottom ul li {
+    display: inline-block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  
+  .donation-item-invest .bottom ul li:last-child {
+    text-align: right;
+  }
+  
+  
+  .donation-item .bottom h4 {
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 0;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+  }
+  
+  
+  .donation-item .bottom h4 span {
+    color: #ff6015;
+  }
+  
+  .sidebar {
+    border-radius: 30px;
+  }
+  

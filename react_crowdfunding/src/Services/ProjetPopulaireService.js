@@ -6,6 +6,7 @@ class ProjetPopulaireService{
 
     getProjet(){
         return axios.get(PROJETPOPULAIRE_API_BASE_URL);
+        
     }
 }
 

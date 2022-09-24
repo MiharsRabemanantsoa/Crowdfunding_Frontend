@@ -16,8 +16,9 @@ import Admin from './Components/Admin';
 import ListProjet from './Components/ListProjet';
 import AboutProject from './Components/AboutProject';
 import Inscription from './Components/Inscription';
-
-
+import MesActivites from './Components/MesActivites';
+import MesInvestissements from './Components/MesInvestissements';
+import ModifierDetails from './Components/ModifierDetails';
 
 function App() {
   return (
@@ -35,6 +36,10 @@ function App() {
         <Route path='/listProjet' element={<ListProjet/>}/>
         <Route path='/AboutProjectall/:idProjetPath' element={<AboutProject/>} />
         <Route path='/loop/admin' element={<Admin/>} />
+        <Route path='/mesActivites' element={<MesActivites/>} />
+        <Route path='/mesInvestissements' element={<MesInvestissements/>} />
+        <Route path='/modifierDetails/:id_projet' element={<ModifierDetails/>} />
+        
 
         </Routes>
 
