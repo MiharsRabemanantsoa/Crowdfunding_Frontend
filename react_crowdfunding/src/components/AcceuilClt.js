@@ -86,7 +86,7 @@ export default class AcceuilClt extends Component {
             </nav>
         </div>
     </div>
-</div>
+    </div>
     <Banner></Banner>
       <ProjetPopulaire></ProjetPopulaire>
       <CounterArea></CounterArea>
