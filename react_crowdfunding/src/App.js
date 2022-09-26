@@ -20,6 +20,7 @@ import MesActivites from './Components/MesActivites';
 import MesInvestissements from './Components/MesInvestissements';
 import ModifierDetails from './Components/ModifierDetails';
 
+
 function App() {
   return (
     <Router>
