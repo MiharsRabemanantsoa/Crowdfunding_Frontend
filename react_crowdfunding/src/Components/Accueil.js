@@ -62,7 +62,7 @@ export default class Accueil extends Component {
         </div>
       <Banner></Banner>
       <ProjetPopulaire></ProjetPopulaire>
-      <CounterArea></CounterArea>
+      {/* <CounterArea></CounterArea> */}
       <BlogArea></BlogArea>
       <TousLesProjets></TousLesProjets>
       <Footer></Footer>
